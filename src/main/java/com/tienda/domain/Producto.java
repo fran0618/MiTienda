@@ -8,7 +8,21 @@ import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
-        
+  
+/*
+ *
+ * En esta clase se aplican anotaciones JPA para relacionar la entidad
+ * con la tabla producto de la base de datos. Tambien se utilizan
+ * validaciones para descripcion, precio, existencias y ruta de imagen.
+ *
+ * La relacion ManyToOne permite asociar varios productos con una
+ * categoria mediante el campo id_categoria.
+ *
+ * Comentario personal:
+ * Esta practica me ayudo a comprender como manejar relaciones entre
+ * entidades y como aplicar validaciones directamente desde el modelo.
+ */
+
 @Data
 @Entity
 @Table(name="producto")
