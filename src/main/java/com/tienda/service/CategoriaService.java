@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 
 package com.tienda.service;
 
@@ -14,6 +11,23 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import org.springframework.dao.DataIntegrityViolationException;
+
+/*
+ * Esta clase contiene la logica de negocio relacionada con las categorias.
+ * Se implementan operaciones para listar, consultar, guardar y eliminar
+ * categorias utilizando CategoriaRepository.
+ *
+ * Tambien se trabaja con transacciones mediante @Transactional y con
+ * FirebaseStorageService para almacenar imagenes asociadas a las categorias.
+ *
+ * En el metodo delete se valida la existencia de la categoria y se controla
+ * el caso en que no pueda eliminarse debido a productos asociados.
+ *
+ * Comentario personal:
+ * Esta practica me permitio comprender mejor la funcion de la capa Service,
+ * separando la logica de negocio del acceso directo a los datos.
+ */
+
 
 @Service
 public class CategoriaService { 
