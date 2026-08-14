@@ -7,6 +7,20 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
+/*
+ * Entidad Categoria desarrollada durante las practicas del curso.
+ * En esta clase se aplican conceptos de JPA para relacionar la clase
+ * con la tabla categoria de la base de datos.
+ *
+ * Se utilizaron validaciones para controlar la descripcion y la ruta
+ * de la imagen, además de una relacion OneToMany con Producto.
+ *
+ * Comentario personal:
+ * Esta practica me permitio comprender como una entidad de Java se
+ * relaciona con una tabla de la base de datos utilizando JPA.
+ */
+
+
 @Data
 @Entity
 @Table(name="categoria")
