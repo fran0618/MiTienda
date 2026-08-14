@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 
 package com.tienda.controller;
 
@@ -21,6 +18,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.tienda.service.CategoriaService;
+
+/*
+ *
+ * Esta clase gestiona las solicitudes relacionadas con los productos
+ * mediante el patron MVC de Spring Boot.
+ *
+ * Se implementan operaciones para listar, guardar, modificar y eliminar
+ * productos, utilizando ProductoService y CategoriaService.
+ *
+ * Tambien se utilizan validaciones, carga de imagenes, mensajes
+ * internacionalizados y manejo de excepciones para informar al usuario
+ * sobre el resultado de las operaciones realizadas.
+ *
+ * Comentario personal:
+ * Esta practica me permitio comprender como el Controller recibe las
+ * solicitudes del usuario, utiliza la capa Service y posteriormente
+ * dirige la respuesta hacia las vistas correspondientes.
+ */
 
 @Controller
 @RequestMapping("/producto")
