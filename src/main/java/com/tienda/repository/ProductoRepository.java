@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 
 package com.tienda.repository;
 
@@ -10,6 +7,23 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.Query;
+
+/*
+ *
+ * En este repositorio se utiliza Spring Data JPA para acceder a los
+ * datos de Producto. Se implementaron diferentes formas de realizar
+ * consultas: consultas derivadas, JPQL y SQL nativo.
+ *
+ * Las consultas permiten buscar productos dentro de un rango de
+ * precios y ordenar los resultados de forma ascendente.
+ *
+ * Comentario personal:
+ * Esta practica me permitio comparar las consultas derivadas de
+ * Spring Data JPA con JPQL y SQL nativo, comprendiendo las diferentes
+ * formas disponibles para consultar la base de datos.
+ */
+
+
 
 @Repository
 public interface ProductoRepository extends JpaRepository<Producto, Integer> {
