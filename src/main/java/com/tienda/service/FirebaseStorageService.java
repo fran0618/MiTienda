@@ -12,6 +12,21 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+/*
+ * Esta clase permite integrar la aplicacion con Firebase Storage para
+ * almacenar las imagenes utilizadas por productos y categorias.
+ *
+ * El servicio recibe archivos MultipartFile, los convierte temporalmente
+ * en archivos locales y posteriormente los almacena en Firebase.
+ * Finalmente se genera una URL que permite acceder a la imagen almacenada.
+ *
+ * Comentario personal:
+ * Esta practica me permitio comprender como integrar un servicio externo
+ * de almacenamiento con Spring Boot y como manejar archivos enviados
+ * desde una aplicacion web.
+ */
+
+
 @Service
 public class FirebaseStorageService {
     @Value("${firebase.bucket.name}")
