@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 package com.tienda.service;
 
@@ -14,6 +10,24 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import org.springframework.dao.DataIntegrityViolationException;
+
+/*
+ *
+ * Esta clase contiene la logica de negocio relacionada con los productos.
+ * Se implementan operaciones para listar, consultar, guardar y eliminar
+ * productos utilizando ProductoRepository.
+ *
+ * Tambien se integra FirebaseStorageService para almacenar imagenes
+ * asociadas a los productos y se utilizan transacciones con @Transactional.
+ *
+ * Ademas, se incluyen metodos para ejecutar consultas derivadas,
+ * consultas JPQL y consultas SQL nativas utilizando rangos de precios.
+ *
+ * Comentario personal:
+ * Esta practica me ayudo a comprender como la capa Service conecta
+ * la logica de negocio con el repositorio y como reutilizar diferentes
+ * tipos de consultas desde una misma clase de servicio.
+ */
 
 @Service
 public class ProductoService { 
